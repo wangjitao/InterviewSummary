@@ -11,7 +11,9 @@
 #import "Person+Category.h"
 #import "MyView.h"
 
-#define M_MIN(a,b) (a>b ? b : a)
+#import<MobileVLCKit/MobileVLCKit.h>
+
+#define M_MIN(a,b) (a>b ? b : a) //创建宏
 
 @interface ViewController ()
 
@@ -19,6 +21,8 @@
 //@property (nonatomic,strong) MyView *testView;
 @property (nonatomic,weak) MyView *testView;
 @property (nonatomic,copy) NSMutableArray *arr;
+
+@property (nonatomic,strong)VLCMediaPlayer *mediaPlayer;
 
 @end
 
@@ -30,14 +34,6 @@
     NSString *cache = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
     _cache = [cache stringByAppendingString:url];
 }
-
-//- (NSMutableArray *)arr
-//{
-//    if (!_arr) {
-//        _arr = [[NSMutableArray alloc] init];
-//    }
-//    return _arr;
-//}
 
 - (void)setArr:(NSMutableArray *)arr
 {
@@ -91,7 +87,6 @@
     
     NSLog(@"主线程 %@",[NSThread currentThread]);
     
-    
     MyView *myView = [[MyView alloc] init];
     myView.frame = CGRectMake(50, 50, 200, 200);
     myView.backgroundColor = [UIColor redColor];
@@ -100,7 +95,6 @@
     [myView addSubview:label];
     
     self.testView = myView;
-    
     [self.view addSubview:myView];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -117,8 +111,16 @@
     [logBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [logBtn addTarget:self action:@selector(logbtnOnClick:) forControlEvents:UIControlEventTouchUpInside];
 
-    
     [self.view addSubview:logBtn];
+    
+    UIView *videoView = [[UIView alloc] initWithFrame:CGRectMake(0, 50, self.view.bounds.size.width, 200)];
+    [self.view addSubview:videoView];
+    
+    VLCMediaPlayer *player = [[VLCMediaPlayer alloc] initWithOptions:nil];
+    self.mediaPlayer = player;
+    self.mediaPlayer.drawable = videoView;
+    self.mediaPlayer.media = [VLCMedia mediaWithPath:[[NSBundle mainBundle] pathForResource:@"a" ofType:@"wmv"]];
+    [self.mediaPlayer play];    
 }
 
 - (void)removeViews:(UIButton *)sender {
@@ -126,6 +128,12 @@
     NSLog(@"点击了按钮");
     
     [self.testView removeFromSuperview];
+    
+    /*
+     addsubview 父类会对对象进行一次强引用，
+     1、使用strong修饰 相当于进行了两次强引用 所以此时retaincount=2
+     2、使用weak修饰 只有一次强引用 remove后对象会被销毁
+     */
     
     NSLog(@"%p||||",self.testView);
 }

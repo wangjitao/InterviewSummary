@@ -19,4 +19,5 @@ target 'Test' do
   #pod 'SDCycleScrollView'
   pod 'Aspects'
   pod 'WebViewJavascriptBridge' 
+  pod 'MobileVLCKit'
 end

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B41F6B21FC47869008AF16D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41F6B11FC47869008AF16D /* libz.tbd */; };
+		6B41F6B41FC47886008AF16D /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41F6B31FC47886008AF16D /* libbz2.tbd */; };
+		6B41F6B61FC47895008AF16D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41F6B51FC47894008AF16D /* libiconv.tbd */; };
+		6B41F6B81FC478A6008AF16D /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41F6B71FC478A6008AF16D /* libstdc++.6.0.9.tbd */; };
+		6B41F6BB1FC48D1B008AF16D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41F6BA1FC48D1B008AF16D /* AVFoundation.framework */; };
+		6B41F6BD1FC48D2D008AF16D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41F6BC1FC48D2D008AF16D /* CoreAudio.framework */; };
+		6B41F6BF1FC48D35008AF16D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41F6BE1FC48D35008AF16D /* CoreMedia.framework */; };
+		6B41F6C11FC48D4D008AF16D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41F6C01FC48D4D008AF16D /* CoreVideo.framework */; };
+		6B41F6C31FC48D6F008AF16D /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41F6C21FC48D6F008AF16D /* VideoToolbox.framework */; };
+		6B41F6C51FC48D84008AF16D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41F6C41FC48D84008AF16D /* MediaPlayer.framework */; };
+		6B41F6C71FC48D9A008AF16D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41F6C61FC48D9A008AF16D /* AudioToolbox.framework */; };
 		6B866B0F1FBA9F7000B4A6EF /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B866B0E1FBA9F7000B4A6EF /* MyView.m */; };
 		6B8D148E1FACA76A00475DC8 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8D148D1FACA76A00475DC8 /* Person.m */; };
 		6B8D14961FACB37900475DC8 /* Person+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8D14951FACB37900475DC8 /* Person+Category.m */; };
@@ -41,6 +52,19 @@
 /* Begin PBXFileReference section */
 		374F071CF1D537C52D7EF0ED /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58583E53CC0A9F2F67A6CE2D /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
+		6B41F6B11FC47869008AF16D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6B41F6B31FC47886008AF16D /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		6B41F6B51FC47894008AF16D /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		6B41F6B71FC478A6008AF16D /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		6B41F6B91FC48B46008AF16D /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		6B41F6BA1FC48D1B008AF16D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6B41F6BC1FC48D2D008AF16D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		6B41F6BE1FC48D35008AF16D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6B41F6C01FC48D4D008AF16D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		6B41F6C21FC48D6F008AF16D /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		6B41F6C41FC48D84008AF16D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6B41F6C61FC48D9A008AF16D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6B41F6C81FC497E8008AF16D /* a.wmv */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.wmv; sourceTree = "<group>"; };
 		6B866B0D1FBA9F7000B4A6EF /* MyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		6B866B0E1FBA9F7000B4A6EF /* MyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		6B8D148C1FACA76A00475DC8 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -71,6 +95,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B41F6C71FC48D9A008AF16D /* AudioToolbox.framework in Frameworks */,
+				6B41F6C51FC48D84008AF16D /* MediaPlayer.framework in Frameworks */,
+				6B41F6C31FC48D6F008AF16D /* VideoToolbox.framework in Frameworks */,
+				6B41F6C11FC48D4D008AF16D /* CoreVideo.framework in Frameworks */,
+				6B41F6BF1FC48D35008AF16D /* CoreMedia.framework in Frameworks */,
+				6B41F6BD1FC48D2D008AF16D /* CoreAudio.framework in Frameworks */,
+				6B41F6BB1FC48D1B008AF16D /* AVFoundation.framework in Frameworks */,
+				6B41F6B81FC478A6008AF16D /* libstdc++.6.0.9.tbd in Frameworks */,
+				6B41F6B61FC47895008AF16D /* libiconv.tbd in Frameworks */,
+				6B41F6B41FC47886008AF16D /* libbz2.tbd in Frameworks */,
+				6B41F6B21FC47869008AF16D /* libz.tbd in Frameworks */,
 				8E37AFA3E587D7B4203A2868 /* Pods_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +152,8 @@
 		6BB00A831FA01DB400BF96BF /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				6B41F6C81FC497E8008AF16D /* a.wmv */,
+				6B41F6B91FC48B46008AF16D /* test.mp4 */,
 				6BB00A841FA01DB400BF96BF /* AppDelegate.h */,
 				6BB00A851FA01DB400BF96BF /* AppDelegate.m */,
 				6BB00A871FA01DB400BF96BF /* ViewController.h */,
@@ -166,6 +203,17 @@
 		BA3F6D7CA8040199E2C11157 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B41F6C61FC48D9A008AF16D /* AudioToolbox.framework */,
+				6B41F6C41FC48D84008AF16D /* MediaPlayer.framework */,
+				6B41F6C21FC48D6F008AF16D /* VideoToolbox.framework */,
+				6B41F6C01FC48D4D008AF16D /* CoreVideo.framework */,
+				6B41F6BE1FC48D35008AF16D /* CoreMedia.framework */,
+				6B41F6BC1FC48D2D008AF16D /* CoreAudio.framework */,
+				6B41F6BA1FC48D1B008AF16D /* AVFoundation.framework */,
+				6B41F6B71FC478A6008AF16D /* libstdc++.6.0.9.tbd */,
+				6B41F6B51FC47894008AF16D /* libiconv.tbd */,
+				6B41F6B31FC47886008AF16D /* libbz2.tbd */,
+				6B41F6B11FC47869008AF16D /* libz.tbd */,
 				374F071CF1D537C52D7EF0ED /* Pods_Test.framework */,
 			);
 			name = Frameworks;
