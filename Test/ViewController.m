@@ -11,6 +11,8 @@
 #import "Person+Category.h"
 #import "MyView.h"
 
+#define M_MIN(a,b) (a>b ? b : a)
+
 @interface ViewController ()
 
 @property (nonatomic,copy) NSString *cache;
@@ -48,6 +50,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //Do any additional setup after loading the view, typically from a nib.
+    
+    int a = M_MIN(9, 7);
+    NSLog(@"最小值%d",a);
     
     NSMutableArray *arr1 = [[NSMutableArray alloc] init];
     self.arr = arr1;
