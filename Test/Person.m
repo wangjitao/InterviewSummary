@@ -27,12 +27,27 @@
     return self;
 }
 
+- (void)setAge:(NSString *)age {
+    if (_age != age) {
+        _age = age;
+    }
+}
+
+- (NSString *)age {
+    return _age;
+}
+
+
 - (NSString *)name {
     return @"wang";
 }
 
 - (void)setDate:(NSDate *)date {
     _date = date;
+}
+
+- (void)runTimeEat {
+    NSLog(@"吃完了");
 }
 
 @end
